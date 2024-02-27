@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+
+/* Navbar design Starts */
+
+.navbar {
+    height: 5rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #EB662B;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.search {
+    margin-left: -20rem ;
+    padding: .5rem;
+    font-size: .8rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 10px;
+    height: 3rem;
+    width: 30em;
+}
+
+input[type = "search"]:focus {
+    outline: none;
+}
+
+.toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    margin-left: -10rem;
+}
+
+.toggle a {
+    text-decoration: none;
+    color: black;
+    font-size: .9rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+.logIn-btn {
+    border: none;
+    height: 2rem;
+    width: 4rem;
+    background-color: #EB662B;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.logIn-btn:hover {
+    cursor: pointer;
+}
+
+/* Navbar design Ends */
+
+/* Home-Screen Design Starts */
+.home-container {
+    min-height: 100vh;
+    margin: 0px 5rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.info .BigB {
+    font-size: 69.73px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info .smallB{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.search-form label {
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-left: -35px;
+}
+.search-form label p{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.search-form {
+    height: 3.5rem;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search-form-form {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 4%, 90%);
+}
+
+.search-btn {
+    border: none;
+    margin-right: -20px;
+    height: 3rem;
+    width: 8rem;
+    font-size: 1.1rem;
+    background-color: #EB662B;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.search-btn:hover{
+    cursor: pointer;
+}
+
+
+.image-container {
+
+    width: 80%;
+}
+
+.Image {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    max-width: 100%;
+    background-size: contain;
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fix the background image */
+    border-radius: 10px;
+    height: 100%;
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85rem;
+}
+
+/* Home-Screen Design Ends */
+
+/* Content page design Starts */
+.reason-content {
+    max-width: 80%;
+    font-family: "Poppins", sans-serif;
+    margin: 5rem 10rem;
+}
+.reasons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.reason{
+    word-wrap: break-word; /* Break words that exceed the container width */
+    overflow-wrap: break-word; /* For compatibility with older browsers */
+    width: 300px;
+}
+
+.reason h3 {
+    font-weight: 550;
+    margin: 10px 0px;
+}
+
+.reason p{
+    font-weight: 300;
+}
+
+.trending-content {
+    max-width: 80%;
+    font-family: "Poppins", sans-serif;
+    margin: 5rem 10rem;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.swiper {
+    width: 100%;
+    height: 18rem;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 1rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+   max-width: 70%;
+   border-radius: 50%;
+}
+
+.swiper-content {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.swiper-content p {
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.swiper-content .trend-light {
+    margin-top: -1.2rem ;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.swiper-pagination{
+
+    bottom: 0;
+}
+/* Content page design Ends */
+
+/* Cards section Starts */
+.cards{
+    min-height: 100vh;
+    max-width: 90%;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    margin: 5rem 10rem;
+}
+
+.card-content {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.cards-display{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 1.2rem;
+}
+
+.card {
+    max-width: 280px;
+    max-height: 100%;
+    padding: auto;
+    border: 1px solid #E7E6E6;
+    border-radius: 12px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card img {
+    width: 90%;
+    margin-top: 12px;
+    margin-left: 14px;
+}
+
+.card h4 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-left: 10px;
+    padding: 10px 0;
+}
+.card .Star{
+    font-weight: 400;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.card hr {
+    width: 80%;
+    background-color: #E7E6E6;
+    height: 1px;
+    border: none;
+    margin: auto;
+}
+
+.card .rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.card .rate p {
+    margin: 0px 10px;
+    font-size: 0.9rem;
+}
+
+.card .rate span {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+/* Cards section Ends */
+
+/* Popular grid design starts */
+.grid{
+    max-width: 100%;
+    font-family: "Poppins", sans-serif;
+    margin: 5rem 5rem;
+}
+
+.grid-offer {
+    position: relative;
+    text-align: center;
+    display: flex;
+}
+.grid-offer img {
+    width: 95%;
+    margin-left: 2.5rem;
+}
+
+.grid-offer .grid-content {
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    text-align: left;
+}
+
+#content1::after{
+    content: "\a";
+    white-space: pre;
+}
+
+.grid-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.grid-content p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+.grid-content button {
+    border: none;
+    height: 3rem;
+    width: 8rem;
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    background-color: #EB662B;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.grid-content button:hover {
+    cursor: pointer;
+}
+
+.grid-content span{
+    color: #EB662B;
+}
+
+
+.grid-display {
+    max-width: 95%;
+    margin: 5rem 5rem;
+}
+
+.grid-head {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+    margin-bottom: -10rem;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.gallery__img:hover{
+    cursor: pointer;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.gallery__item--2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+.gallery__item--3 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
+
+.gallery__item--4 {
+    grid-column-start: 6;
+    grid-column-end: 17;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.gallery__item--5 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+.gallery__item--6 {
+    grid-column-start: 8;
+    grid-column-end: 17;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+/* Popular grid design ends */
+
+
+/* Top-trending desing Starts */
+.empty-container{
+    max-width: 100%;
+    font-family: "Poppins", sans-serif;
+    margin: 5rem 8rem;
+    padding: 4rem;
+    background: #F5F5F5;
+}
+
+.trendz{
+    width: 95%;
+    padding-bottom: 3rem;
+}
+
+.trenz-cards{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bg-card{
+    background-color: #fff;
+}
+
+/* Top-trending desing Ends */
+
+/* Review desing Starts */
+.Reviews {
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+}
+
+.Reviews img {
+    width: 95%;
+    margin-left: 2.5rem;
+}
+
+.review-head {
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 42.5%;
+}
+
+.review {
+    position: absolute;
+    text-align: center;
+    width: 35%;
+    top: 33%;
+    left: 32.5%;
+}
+
+.review img {
+    width: 18%;
+    margin-left: -0.2rem;
+    margin-bottom: 2rem ;
+}
+
+.review p{
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+.review span{
+    font-size: 0.9rem;
+    font-weight: 450;
+}
+
+
+/* Review desing Ends */
+
+/* App banner design Starts */
+.app{
+    position: relative;
+    text-align: center;
+    display: flex;
+}
+
+.app img {
+    width: 90%;
+    margin: 0 5rem;
+    text-align: center;
+}
+
+.app-content {
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 15%;
+}
+
+.mobilePic {
+    position: absolute;
+    color: white;
+    width: 650px;
+    right: 10%;
+    top: 4.5%;
+}
+
+.app-content h2 {
+    font-size: 2.5rem;
+    margin: .5rem 0;
+}
+
+.app-content p {
+    font-size: 0.9rem;
+    margin-bottom: .2rem ;
+}
+
+.enquiry {
+    font-size: 1.1rem;
+    margin: 3rem 0;
+}
+
+.Send {
+    width: 18rem;
+    height: 3rem;
+    padding-left: 1rem;
+    border: none;
+    border-radius: 12px;
+}
+
+.Send-btn {
+    width: 6rem;
+    height: 3rem;
+    border: none;
+    background: #fff;
+    color: #4A43C4;
+    border-radius: 12px;
+}
+
+.Send-btn:hover {
+    cursor: pointer;
+}
+
+/* App banner design Ends */
+
+/* Article design Starts */
+.article{
+    max-width: 100%;
+    font-family: "Poppins", sans-serif;
+    margin: 1rem 8rem;
+    padding: 4rem;
+}
+
+.article-content{
+    width: 95%;
+    margin: 0rem 2rem;
+}
+
+.article-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.article-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+
+.article-container p{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.article-container h4 {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.article-container h4:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Article design Ends */
+
+/* Footer design Starts */
+footer {
+    max-width: 100%;
+}
+
+.footer-details{
+    text-align: center;
+    position: relative;
+}
+
+.footer-details img{
+    width: 90%;
+    border-radius: 15px;
+}
+
+.foot-head {
+    text-align: center;
+    margin: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 50rem;
+}
+
+.foot-content {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+.lists {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.list1 {
+    text-align: left;
+    margin-top: 2rem;
+    width: 400px;
+}
+
+.list1 h4 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.list1 li {
+    word-wrap: break-word;
+    margin: 1rem 0;
+}
+
+.list2 {
+    margin-left: 1.5rem;
+    text-align: left;
+    margin-top: 2rem;
+    width: 200px;
+}
+
+.support {
+    margin-top: -5rem;
+}
+
+.list2 h4 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.list2 li {
+    margin: 0.5rem 0;
+    font-weight: 400;
+}
+
+.newsletter {
+    height: 3rem;
+    width: 15rem;
+    border-radius: 12px;
+    border: none;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.list3 p {
+    margin-bottom: 1rem;
+}
+
+.list3 {
+    margin-left: 1.5rem;
+    text-align: left;
+    margin-top: 2rem;
+    width: 350px;
+}
+
+.list3 h4 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.list3 li {
+    margin: 0.5rem 1rem;
+    font-weight: 400;
+}
+
+.list3 button {
+    height: 3rem;
+    width: 4rem;
+    color: #4A43C4;
+    background-color: #fff;
+    border-radius: 12px;
+    border: none;
+    padding-left: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.list3 button:hover {
+    cursor: pointer;
+}
+
+.lists li:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 62%);
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15rem;
+
+}
+/* Footer design Ends */
